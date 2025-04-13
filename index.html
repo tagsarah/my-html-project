@@ -3,26 +3,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="style.css">
-    <title>plant shop website</title>
+    <title>plant shop -your plant heaven</title>
+    <style>
+    body {
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+      background-color: #719471;
+      color: whitesmoke;
+    }
+
+    nav {
+      background-color: #244226;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo img {
+      height: 50px;
+      border-radius: 10px;
+    }
+
+    .links a {
+      color: whitesmoke;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: auto;
+    }
+    .search-bar input {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 5px;
+    }
+    .search-bar button {
+      padding: 6px 12px;
+      background-color:#2e7d32;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
 
+  <nav>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="plant.jpg" alt="plant logo">
+      </div>
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#plants">Plants</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="searchinput" placeholder="search for plants...">
+        <button onclick="searchplants()">search</search></button>
+      </div>
+      
+    </div>
+  </nav>
 
+  <section id="about" style="padding: 30px; text-align: center;">
+    <h2>About PlanetShop</h2>
+    <p>We bring beautiful plants to your home. we have something green just for you!</p>
+  </section>
 
-    <nav>
-        <div  class="wrapper">
-            <div class="logo"  data-aos="fade-right">
-                <img src="plant.jpg" alt="plant">
-            </div>
-            <div class="links">
-                <a href="">home</a>
-                <a href="">services</a>
-                <a href="">pricing</a>
-                <a href="">contact</a>
-                <a href="">plants</a>
-            </div>
-        </div>
-   </nav>
-    
+  <section id="plants" style="padding: 30px; text-align: center;">
+    <h2>Our Plants</h2>
+    <div style="display: flex; justify-content:center; gap: 20px; flex-wrap: wrap;">
+      <div style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
+        <img src="https://images.pexels.com/photos/4067116/pexels-photo-4067116.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="Aloe Vera" style="width: 100%; border-radius: 10px;">
+        <h4>Aloe Vera</h4>
+        <button onclick="orderNow('Aloe Vera')" style="background-color: #388e3c; color: white; border: none; padding: 8px 12px; border-radius: 5px; cursor: pointer;">Order Now</button>
+      </div>
+      <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;" >
+        <img src=" https://images.pexels.com/photos/1777813/pexels-photo-1777813.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="Pothos"style="width: 100%; border-radius: 10px;">
+        <h4>Pothos</h4>
+        <button onclick="orderNow ('Pothos')" style="background-color: #388e3c;color: white; border: none; padding: 8px 12px; border-radius: 5px;cursor: pointer;">Order Now</button></button>
+      </div>
+      <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
+        <img src="https://images.pexels.com/photos/7290385/pexels-photo-7290385.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="Araceae"style="width: 100%; height: 75% ; border: radius 10px;">
+        <h4>Araceae</h4>
+        <button onclick="orderNow (Araceae)" style="background-color: #388e3c;color: white;border: none;padding: 8px 12px; border-radius: 5px;cursor: pointer;">Order Now</button></button>
+      </div>
+      <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
+        <img src="https://images.pexels.com/photos/4753285/pexels-photo-4753285.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="spider"style="width: 100%; border: radius 10px;">
+        <h4>spider</h4>
+        <button onclick="orderNow (spider)" style="background-color: #388e3c;color: white;border: none;padding: 8px 12px;border-radius: 5px;cursor: pointer;">Order Now</button>
+      </div>
+      <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
+        <img src="https://images.pexels.com/photos/22863428/pexels-photo-22863428/free-photo-of-a-snake-plant-in-a-white-pot.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="snake"style="width: 100%; height: 75%; border: radius 10px;">
+        <h4>snake</h4>
+        <button onclick="orderNow(snake)" style="background-color:#388e3c;color: white;border: none;padding: 8px 12px;border-radius: 5px;cursor: pointer;">Order Now</button>
+      </div>
+      <div class="plant-card">
+        <img src="" alt="">
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function orderNow(plantName) {
+      alert("Thank you for your interest in " + plantName + "! We'll contact you soon.");
+    }
+  </script>
+  <script>
+    function searchPlants() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const plantCards = document.querySelectorAll(".plant-card");
+  
+      plantCards.forEach(card => {
+        const headings = card.querySelectorAll("h4, h4, h4, h6");
+        let matchFound = false;
+  
+        headings.forEach(heading => {
+          if (heading.textContent.toLowerCase().includes(input)) {
+            matchFound = true;
+          }
+        });
+  
+        card.style.display = matchFound ? "block" : "none";
+      });
+    }
+  </script>
+  
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+>
