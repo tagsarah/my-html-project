@@ -1,10 +1,76 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <body>
+  <div>  
+    <div>
+      <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="style.css">
-    <title>plant shop -your plant heaven</title>
+    <div id="categories">
+      <title>plant shop -your plant heaven</title>
+      <div>
+      <button onclick="filterPlants('all')">All</button>
+      <button onclick="filterPlants('indoor')">Indoor</button>
+      <button onclick="filterPlants('outdoor')">Outdoor</button>
+      </div>
+    </body>
+  
     <style>
+      .plant-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 15px;
+  text-align: center;
+  width: 200px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+h3 {
+  margin-top: 10px;
+  color: #2e7d32;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #2e7d32;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
     body {
     margin:0;
     font-family: 'Segoe UI', sans-serif;
@@ -63,7 +129,6 @@
   </style>
 </head>
 <body>
-
   <nav>
     <div class="wrapper">
       <div class="logo">
@@ -92,7 +157,7 @@
     <h2>Our Plants</h2>
     <div style="display: flex; justify-content:center; gap: 20px; flex-wrap: wrap;">
       <div style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
-        <img src="https://images.pexels.com/photos/4067116/pexels-photo-4067116.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="Aloe Vera" style="width: 100%; border-radius: 10px;">
+        <img src="https://images.pexels.com/photos/4067116/pexels-photo-4067116.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="Aloe Vera" style="width: 100%;height: 70%; border-radius: 10px;">
         <h4>Aloe Vera</h4>
         <button onclick="orderNow('Aloe Vera')" style="background-color: #388e3c; color: white; border: none; padding: 8px 12px; border-radius: 5px; cursor: pointer;">Order Now</button>
       </div>
@@ -102,8 +167,8 @@
         <button onclick="orderNow ('Pothos')" style="background-color: #388e3c;color: white; border: none; padding: 8px 12px; border-radius: 5px;cursor: pointer;">Order Now</button></button>
       </div>
       <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
-        <img src="https://images.pexels.com/photos/7290385/pexels-photo-7290385.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="Araceae"style="width: 100%; height: 75% ; border: radius 10px;">
-        <h4>Araceae</h4>
+        <img src="https://images.pexels.com/photos/5188783/pexels-photo-5188783.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="zz"style="width: 100%; height: 75% ; border: radius 10px;">
+        <h4>zz</h4>
         <button onclick="orderNow (Araceae)" style="background-color: #388e3c;color: white;border: none;padding: 8px 12px; border-radius: 5px;cursor: pointer;">Order Now</button></button>
       </div>
       <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
@@ -116,8 +181,30 @@
         <h4>snake</h4>
         <button onclick="orderNow(snake)" style="background-color:#388e3c;color: white;border: none;padding: 8px 12px;border-radius: 5px;cursor: pointer;">Order Now</button>
       </div>
-      <div class="plant-card">
-        <img src="" alt="">
+      <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
+        <img src="https://images.pexels.com/photos/2746155/pexels-photo-2746155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="lavender"style="width: 100%; border: radius 10px;">
+        <h4>lavender</h4>
+        <button onclick="orderNow(lavender)"style="width: 100%; border: radius 10px;">orderNow</button>
+      </div>
+      <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
+        <img src="https://images.pexels.com/photos/23826253/pexels-photo-23826253/free-photo-of-close-up-of-white-jasmine-flowers.jpeg?auto=compress&cs=tinysrgb&w=600" alt="jasmine"style="width: 100%; border: radius 10px;">
+        <h4>jasmine</h4>
+        <button onclick="orderNow(jasmine)"style="width: 100%; border: radius 10px;">orderNow></button>
+      </div>
+      <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
+        <img src="https://images.pexels.com/photos/30373941/pexels-photo-30373941/free-photo-of-moody-close-up-of-vibrant-marigold-flower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="marigold"style="width: 100%; border: radius 10px;">
+        <h4>marigold</h4>
+        <button onclick="orderNow(marigold)"style="width: 100%; border-radius: 10px;">orderNow></button>
+      </div>
+      <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
+        <img src="https://images.pexels.com/photos/15849187/pexels-photo-15849187/free-photo-of-head-of-a-pink-blooming-flower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="hibiscus"style="width: 100%; border: radius 10px;">
+        <h4>hibiscus</h4>
+        <button onclick="orderNow(hibiscus)"style="width: 100%; border-radius: 10px;">orderNow</button>
+      </div>
+      <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
+        <img src="https://images.pexels.com/photos/6141362/pexels-photo-6141362.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bougainvillea"style="width: 100%; border: radius 10px;">
+        <h4>Bougainvillea</h4>
+        <button onclick="orderNow(Bougainvillea)"style="width: 100%; border-radius: 10px;">orderNow</button>
       </div>
     </div>
   </section>
@@ -147,14 +234,23 @@
     }
   </script>
   
+</div>
+<script>function filterPlants(category) {
+  const allPlants = document.querySelectorAll(".plant-card");
+
+  allPlants.forEach((plant) => {
+    // Check if plant has the category class
+    if (plant.classList.contains(category) || category === "all") {
+      plant.style.display = "block"; // Show
+    } else {
+      plant.style.display = "none"; // Hide
+    }
+  });
+}
+</script>
+
+  </body>
+  
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
->
