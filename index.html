@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="style.css">
     <div id="categories">
+      
       <title>plant shop -your plant heaven</title>
       <div>
       <button onclick="filterPlants('all')">All</button>
@@ -156,10 +157,10 @@ body {
   <section id="plants" style="padding: 30px; text-align: center;">
     <h2>Our Plants</h2>
     <div style="display: flex; justify-content:center; gap: 20px; flex-wrap: wrap;">
-      <div style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
-        <img src="https://images.pexels.com/photos/4067116/pexels-photo-4067116.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="Aloe Vera" style="width: 100%;height: 70%; border-radius: 10px;">
+      <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
+        <img src="https://images.pexels.com/photos/4067116/pexels-photo-4067116.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="Aloe Vera" style="width: 100%; border-radius: 10px;">
         <h4>Aloe Vera</h4>
-        <button onclick="orderNow('Aloe Vera')" style="background-color: #388e3c; color: white; border: none; padding: 8px 12px; border-radius: 5px; cursor: pointer;">Order Now</button>
+        <button onclick="orderNow ('Aloe Vera')" style="background-color: #388e3c;color: white; border: none; padding: 8px 12px; border-radius: 5px;cursor: pointer;">Order Now</button>
       </div>
       <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;" >
         <img src=" https://images.pexels.com/photos/1777813/pexels-photo-1777813.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="Pothos"style="width: 100%; border-radius: 10px;">
@@ -168,43 +169,43 @@ body {
       </div>
       <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
         <img src="https://images.pexels.com/photos/5188783/pexels-photo-5188783.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="zz"style="width: 100%; height: 75% ; border: radius 10px;">
-        <h4>zz</h4>
+        <h4>Zz</h4>
         <button onclick="orderNow (Araceae)" style="background-color: #388e3c;color: white;border: none;padding: 8px 12px; border-radius: 5px;cursor: pointer;">Order Now</button></button>
       </div>
       <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
         <img src="https://images.pexels.com/photos/4753285/pexels-photo-4753285.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="spider"style="width: 100%; border: radius 10px;">
-        <h4>spider</h4>
+        <h4>Spider</h4>
         <button onclick="orderNow (spider)" style="background-color: #388e3c;color: white;border: none;padding: 8px 12px;border-radius: 5px;cursor: pointer;">Order Now</button>
       </div>
       <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
         <img src="https://images.pexels.com/photos/22863428/pexels-photo-22863428/free-photo-of-a-snake-plant-in-a-white-pot.jpeg?auto=compress&cs=tinysrgb&w=1440&h=150&dpr=2" alt="snake"style="width: 100%; height: 75%; border: radius 10px;">
-        <h4>snake</h4>
+        <h4>Snake</h4>
         <button onclick="orderNow(snake)" style="background-color:#388e3c;color: white;border: none;padding: 8px 12px;border-radius: 5px;cursor: pointer;">Order Now</button>
       </div>
       <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
         <img src="https://images.pexels.com/photos/2746155/pexels-photo-2746155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="lavender"style="width: 100%; border: radius 10px;">
-        <h4>lavender</h4>
-        <button onclick="orderNow(lavender)"style="width: 100%; border: radius 10px;">orderNow</button>
+        <h4>Lavender</h4>
+        <button onclick="orderNow(lavender)"style="background-color:#388e3c;color: white;border: none;padding: 8px 12px;border-radius: 5px;cursor: pointer;">orderNow</button>
       </div>
       <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
         <img src="https://images.pexels.com/photos/23826253/pexels-photo-23826253/free-photo-of-close-up-of-white-jasmine-flowers.jpeg?auto=compress&cs=tinysrgb&w=600" alt="jasmine"style="width: 100%; border: radius 10px;">
-        <h4>jasmine</h4>
-        <button onclick="orderNow(jasmine)"style="width: 100%; border: radius 10px;">orderNow></button>
+        <h4>Jasmine</h4>
+        <button onclick="orderNow(jasmine)"style="background-color:#388e3c;color: white;border: none;padding: 8px 12px;border-radius: 5px;cursor: pointer;">orderNow</button>
       </div>
       <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
         <img src="https://images.pexels.com/photos/30373941/pexels-photo-30373941/free-photo-of-moody-close-up-of-vibrant-marigold-flower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="marigold"style="width: 100%; border: radius 10px;">
-        <h4>marigold</h4>
-        <button onclick="orderNow(marigold)"style="width: 100%; border-radius: 10px;">orderNow></button>
+        <h4>Marigold</h4>
+        <button onclick="orderNow(marigold)"style="background-color:#388e3c;color: white;border: none;padding: 8px 12px;border-radius: 5px;cursor: pointer;">orderNow</button>
       </div>
       <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
         <img src="https://images.pexels.com/photos/15849187/pexels-photo-15849187/free-photo-of-head-of-a-pink-blooming-flower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="hibiscus"style="width: 100%; border: radius 10px;">
-        <h4>hibiscus</h4>
-        <button onclick="orderNow(hibiscus)"style="width: 100%; border-radius: 10px;">orderNow</button>
+        <h4>Hibiscus</h4>
+        <button onclick="orderNow(hibiscus)"style="background-color:#388e3c;color: white;border: none;padding: 8px 12px;border-radius: 5px;cursor: pointer;">orderNow</button>
       </div>
       <div class="plant-card" style="background-color:green; border-radius: 10px; padding: 10px; width: 200px;">
         <img src="https://images.pexels.com/photos/6141362/pexels-photo-6141362.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bougainvillea"style="width: 100%; border: radius 10px;">
-        <h4>Bougainvillea</h4>
-        <button onclick="orderNow(Bougainvillea)"style="width: 100%; border-radius: 10px;">orderNow</button>
+        <h4>ougainvillea</h4>
+        <button onclick="orderNow(Bougainvillea)"style="background-color:#388e3c;color: white;border: none;padding: 8px 12px;border-radius: 5px;cursor: pointer;">orderNow</button>
       </div>
     </div>
   </section>
