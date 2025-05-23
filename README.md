@@ -66,7 +66,8 @@ Thanks to everyone who encouraged me to start learning to code and believed in m
 
 ## 📸 Screenshots
 
-*(Optional – you can add screenshots later using this format)*
+![Screenshot 2025-05-23 175455](https://github.com/user-attachments/assets/828f47c8-126e-4310-9bbe-17da41aaac76)
+![Screenshot 2025-05-23 175519](https://github.com/user-attachments/assets/2da10c45-adbc-450a-a0cd-6b217aafbf15)
+![Screenshot 2025-05-23 175432](https://github.com/user-attachments/assets/fd775b00-c722-4d16-8587-26d296d0a9f9)
+![Screenshot 2025-05-23 175600](https://github.com/user-attachments/assets/e6252b80-6015-477c-a408-947cdb22ef3a)
 
-```md
-![Homepage](images/homepage-screenshot.png)
