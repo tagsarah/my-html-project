@@ -1,18 +1,164 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <body>
-            
-        </body>
-<nav>
-    <a href="index.html">Home</a>
-    <a href="indoor.html">Indoor Plants</a>
-    <a href="outdoor.html">Outdoor Plants</a>
-</nav>
- </head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>outdoorplants</title>
-    <link rel="stylesheet" href="style.css" />
-</body>
-  </head>  
-  </html>
+<head>
+  <meta charset="UTF-8">
+  <title>Indoor Plants - PlanetShop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #719471;
+      color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav {
+      background-color: #244226;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo img {
+      height: 50px;
+      border-radius: 10px;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .links a {
+      color: whitesmoke;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #2e7d32;
+      min-width: 160px;
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #1b5e20;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .plant-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 15px;
+      text-align: center;
+      width: 200px;
+      background-color: #f9f9f9;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      color: #333;
+    }
+
+    .plant-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .plant-card h3 {
+      margin-top: 10px;
+      color: #2e7d32;
+    }
+  </style>
+</head>
+<body><body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="plant.jpg" alt="plant logo">
+      </div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <div class="dropdown">
+          <a href="#">Plants</a>
+          <div class="dropdown-content">
+            <a href="all.html">All Plants</a>
+            <a href="indoor.html">Indoor Plants</a>
+            <a href="outdoor.html">Outdoor Plants</a>
+          </div>
+        </div>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+<!-- Page Title -->
+  <h2>Our Outdoor Plants</h2>
+
+  <!-- outdoor Cards -->
+  <div class="container">
+    <div class="plant-card">
+        <img src="https://images.pexels.com/photos/2746155/pexels-photo-2746155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Lavender">
+        <h3>Lavender</h3>
+        </div>
+        <div class="plant-card">
+            <img src="https://images.pexels.com/photos/23826253/pexels-photo-23826253/free-photo-of-close-up-of-white-jasmine-flowers.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Jasmine">
+            <h3>Jasmine</h3>
+        </div>
+        <div class="plant-card">
+            <img src="https://images.pexels.com/photos/30373941/pexels-photo-30373941/free-photo-of-moody-close-up-of-vibrant-marigold-flower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Marigold">
+            <h3>Marigold</h3>
+        </div>
+        <div class="plant-card">
+            <img src="https://images.pexels.com/photos/15849187/pexels-photo-15849187/free-photo-of-head-of-a-pink-blooming-flower.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Hibiscus">
+            <h3>Hibiscus</h3>
+        </div>
+        <div class="plant-card">
+            <img src="https://images.pexels.com/photos/6141362/pexels-photo-6141362.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ougainvillea">
+            <h3>Ougainvillea</h3>
+        </div>
+    </div>
